@@ -1,0 +1,58 @@
+[
+    { "key": 1,
+      "id": 1,
+      "title": "Dental Bonding",
+      "ShortDescription": "Dental bonding is a technique used to correct imperfections with your teeth to give you a better-looking smile. ",
+      "Full-description": "Dental bonding is a technique used to correct imperfections with your teeth to give you a better-looking smile. Bonding is used to repair chipped teeth, decayed teeth, and cracked teeth. Bonding involves applying a tooth-colored resin material to the teeth and hardening it with a light. This bonds the material to the teeth to improve a person's smile. ",
+      "price": 10.00,
+      "image": "https://berwyndentalconnection.com/wp-content/uploads/2020/06/dental-bonding.png"
+     
+    },
+    {"key": 2,
+      "id": 2,
+      "title": "Dental Crowns",
+      "ShortDescription": "A dental crown is a dental prosthesis which replaces the visible part of a tooth. ",
+      "Full-description": "A dental crown is a dental prosthesis which replaces the visible part of a tooth. A dental crown functions to strengthen teeth, restore their original shape, and improve their appearance. Dental crowns are also used to hold dental bridges in place and cover dental implants.",
+      "price": 16.60,
+      "image": "https://www.newmouth.com/wp-content/uploads/2020/09/stainless-steel-crown-scaled.jpeg"
+  
+    },
+    {"key": 3,
+      "id": 3,
+      "title": "Bridgework",
+      "ShortDescription": "A dental bridge is a structure between two dental crowns to fill the gap between missing teeth..",
+      "Full-description": "A dental bridge is a structure between two dental crowns to fill the gap between missing teeth. A bridge can be supported by your teeth, implants, or a combination of teeth and implants. A dental bridge can restore your smile, improve your appearance, and take years off your look. Who doesn't want to look better- or younger?",
+      "price": 12.99,
+      "image": "https://img.freepik.com/free-vector/denture-concept-healthy-teeth-with-fixed-dental-bridgework-implants_177953-197.jpg?size=338&ext=jpg&ga=GA1.2.503446043.1623542400"
+   
+    },
+    {"key": 4,
+      "id": 4,
+      "title": "Cosmetic Fillings",
+      "ShortDescription": "Cosmetic fillings, or tooth- colored fillings, are made of composite resin and glass particles.",
+      "Full-description": "Cosmetic fillings, or tooth- colored fillings, are made of composite resin and glass particles. They are cemented onto the existing teeth using a bonding agent. Cosmetic fillings can improve the appearance of your smile. Unlike silver-colored fillings, cosmetic fillings look just like your natural teeth. ",
+      "price": 23.99,
+      "image": "https://waverlydentalgroup.com/wp-content/uploads/2016/09/toothfillings.png"
+    
+    },
+    {"key": 5,
+      "id": 5,
+      "title": "Dental Veneers",
+      "ShortDescription": "Many people are discovering the benefits of veneers. Veneers are thin coverings that are placed over the front part of the teeth.",
+      "Full-description": "Many people are discovering the benefits of veneers. Veneers are thin coverings that are placed over the front part of the teeth. Veneers are placed on teeth that are crooked, poorly shaped, or severely discolored. They may also be used to lighten teeth that are yellow or have a gray cast.",
+      "price": 40.00,
+      "image": "https://www.kindpng.com/picc/m/366-3664788_tooth-discoloration-porcelain-veneers-composite-bonding-tooth-chipped.png"
+      
+    },
+    {"key": 6,
+      "id": 6,
+      "title": "Teeth Cleanings",
+      "ShortDescription": "You should visit the dentist every six months for teeth cleanings. Tartar is a hard buildup of plaque that forms on the teeth.",
+      "Full-description": "You should visit the dentist every six months for teeth cleanings. Tartar is a hard buildup of plaque that forms on the teeth. Tartar forms below and above the gum line. The only way to remove tartar is to see a dentist for a professional teeth cleaning. Regular teeth cleanings are important to maintaining healthy teeth and gums.",
+      "price": 30.00,
+      "image": "https://www.sleephealthsolutionsohio.com/wp-content/uploads/Dental-Sleep-Medicine-2.jpeg"
+     
+    }
+    
+  ]
+  
