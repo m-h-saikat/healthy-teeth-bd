@@ -3,15 +3,17 @@ import {
   BrowserRouter as Router,
   Switch,
   Route,
-  Link
 } from "react-router-dom";
 import './App.css';
 import AuthProvider from "./Context/AuthProvider";
+import Contact from "./Pages/Contact/Contact";
 
 import Home from "./Pages/Home/Home";
 import Service from "./Pages/Home/Services/Service";
 import ServiceDetails from "./Pages/Home/Services/ServiceDetails";
+import Team from "./Pages/Home/Team/Team";
 import Login from "./Pages/Login/Login/Login";
+import PrivateRoute from "./Pages/Login/PrivateRoute/PrivateRoute";
 import Register from "./Pages/Login/Register/Register";
 import NotFound from "./Pages/Not Found/NotFound";
 
@@ -34,14 +36,20 @@ function App() {
          <Route path ="/Service"> 
          <Service></Service>
          </Route>
+         <Route path ="/Team"> 
+         <Team></Team>
+         </Route>
          <Route path ="/Login"> 
          <Login></Login>
          </Route>
-         <Route path ="/ServiceDetails"> 
+         <PrivateRoute path ="/ServiceDetails/:ServiceID"> 
          <ServiceDetails></ServiceDetails>
-         </Route>
+         </PrivateRoute>
          <Route path ="/Register"> 
          <Register></Register>
+         </Route>
+         <Route path ="/Contact"> 
+         <Contact></Contact>
          </Route>
          <Route path ="*"> 
        <NotFound></NotFound>

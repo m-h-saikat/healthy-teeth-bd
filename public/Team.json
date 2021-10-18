@@ -1,0 +1,26 @@
+[
+    { "key": 1,
+      "id": 1,
+      "name": "Jhon Alex Paul",
+      "designation": "Ceo & Co-Founder",
+  
+ 
+      "image": "https://burnsdentistry.com/assets/img/meet-doctor-nelson.jpg"
+     
+    },
+    {"key": 2,
+      "id": 2,
+      "name": "Mike Colles      ",
+      "designation": "Dental Assistant",
+      "image": "https://www.kindpng.com/picc/m/215-2154483_physician-dentistry-tooth-dental-implant-dentist-png-transparent.png"
+  
+    },
+    {"key": 3,
+      "id": 3,
+      "name": "Katie Roberts",
+      "designation": "Dental Hygienist",
+      "image": "https://4brmw53aozesgxafj1s6a491-wpengine.netdna-ssl.com/wp-content/uploads/2015/10/doctors.jpg"
+   
+    }
+  ]
+  

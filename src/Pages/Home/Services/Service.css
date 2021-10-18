@@ -1,7 +1,29 @@
-.Service-card{
-    height: 700px;
+.Service .Service-card {
+  height: 700px;
 }
-.Service-card img{
-    height: 300px;
-    width: 400;
+.Service .Service-card img {
+  height: 300px;
+  width: 400;
+}
+.card-footer {
+  background-color: white !important;
+  border-top: none !important;
+}
+.card:hover {
+  border: 3px solid black;
+}
+.text-box {
+  border: 2px solid green;
+  width: 35%;
+  border-radius: 20px !important;
+  color: red !important;
+  padding: 10px;
+  background-color: rgb(0, 0, 0);
+}
+.card {
+  border-radius: 40px !important;
+}
+
+.Service {
+  background-color: #e0e1e6;
 }
