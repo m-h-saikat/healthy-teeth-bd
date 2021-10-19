@@ -36,7 +36,7 @@ const Banner = () => {
           />
 
           <Carousel.Caption>
-            <h1 className="text-primary"></h1>
+        
           </Carousel.Caption>
         </Carousel.Item>
       </Carousel>

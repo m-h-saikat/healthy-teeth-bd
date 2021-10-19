@@ -11,9 +11,9 @@ const Header = () => {
     const {user,LogOut}=useAuth();
     return (
         <div className="header"  >
-          <Navbar expand="lg" >
+          <Navbar expand="lg" sticky="top">
   <Container>
-  <img src={Logo} alt="" width="50" height="50" />   <h1 className="ms-2"> <b>HEALTHY TEETH</b></h1>
+  <img src={Logo} alt="" width="50" height="50" />   <h4 className="ms-2"> <b>HEALTHY TEETH</b></h4>
     <Navbar.Toggle />
     <Navbar.Collapse className="justify-content-end">
     <NavLink to="/Home" className="NavLink"><h4>Home</h4></NavLink>
@@ -28,7 +28,7 @@ const Header = () => {
 
     {user.email? (<button onClick={LogOut}  className="btn btn-danger">SignOut</button> ):(<NavLink to="/Login"className="NavLink"><button className="btn btn-primary">Sign In</button></NavLink>)
     }
-   { user.email?( <div className="d-flex">{user.photo?(<img className="user-profile-photo" src={user.photo} width="50" height="50"/>):(<img className="user-profile-photo" src={NoImageinUSer} width="50" height="50"/>)} <p className="my-auto ms-2 h6">
+   { user.email?( <div className="d-flex">{user.photo?(<img className="user-profile-photo" src={user.photo} width="50" height="50" alt=""/>):(<img className="user-profile-photo" src={NoImageinUSer} width="50" height="50" alt=""/>)} <p className="my-auto ms-2 h6">
 {user.name}
    
    </p> </div> ) :(<NavLink to="/Register"className="NavLink"><button className="btn btn-danger">Sign Up</button></NavLink>)}

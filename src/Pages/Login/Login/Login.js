@@ -14,8 +14,7 @@ const Login = () => {
     SignInUsingGithub,
     handleEmailChange,
     handlePasswordChange,
-    handlesignInWithEmailAndPassword,
-    alert,
+    handlesignInWithEmailAndPassword
   } = useAuth();
   const resetInfo = () => {
     document.getElementById("email").value = "";
@@ -23,22 +22,22 @@ const Login = () => {
   };
 
   return (
-    <div class="Login-container ">
-      <div class="row w-75 mx-auto">
-        <div class="col-sm-9 col-md-7 col-lg-5 mx-auto">
-          <div class="card border-0 shadow rounded-3 my-5 mx-auto">
-            <div class="card-body p-4 p-sm-5">
-              <h1 class="card-title text-center mb-5 fw-light fs-5 ">
+    <div className="Login-container ">
+      <div className="row w-75 mx-auto">
+        <div className="col-sm-9 col-md-7 col-lg-5 mx-auto">
+          <div className="card border-0 shadow rounded-3 my-5 mx-auto">
+            <div className="card-body p-4 p-sm-5">
+              <h1 className="card-title text-center mb-5 fw-light fs-5 ">
               
-                <img src={Logo} width="100" height="100" /> <br />
-                <b class="h3 text-danger"> Sign In Healthy Teeth </b>
+                <img src={Logo} width="100" height="100" alt=""/> <br />
+                <b className="h3 text-danger"> Sign In Healthy Teeth </b>
               </h1>
               <form onSubmit={handlesignInWithEmailAndPassword}>
-                <div class="form-floating mb-3">
+                <div className="form-floating mb-3">
                   <input
                     onBlur={handleEmailChange}
                     type="email"
-                    class="form-control "
+                    className="form-control "
                     placeholder="name@example.com"
                     id="email"
                   />
@@ -48,11 +47,11 @@ const Login = () => {
                     address
                   </label>
                 </div>
-                <div class="form-floating mb-3">
+                <div className="form-floating mb-3">
                   <input
                     onBlur={handlePasswordChange}
                     type="password"
-                    class="form-control"
+                    className="form-control"
                     placeholder="Password"
                     id="password"
                   />
@@ -62,38 +61,38 @@ const Login = () => {
                   </label>
                 </div>
 
-                <div class="form-check mb-3">
+                <div className="form-check mb-3">
                   <input
-                    class="form-check-input"
+                    className="form-check-input"
                     type="checkbox"
                     value=""
                     id="rememberPasswordCheck"
                   />
-                  <label class="form-check-label" for="rememberPasswordCheck">
+                  <label className="form-check-label" for="rememberPasswordCheck">
                     Remember password
                   </label>
                 </div>
-                <div class="d-grid">
+                <div className="d-grid">
                   <p>{error.message}</p>
                   <button
-                    class="btn btn-primary"
+                    className="btn btn-primary"
                     type="submit" onClick={resetInfo}
                   >
                     Sign in
                   </button>
                 </div>
-                <div class="text-center text-danger">
-                  New User?
-                  <Link to="/Register" class="text-center text-danger">
+                <div className="text-center text-danger">
+                  New User?  
+                    <Link to="/Register" className="text-center text-danger Login-Logout-Button ">
                   
-                    Sign Up
+                      Sign Up
                   </Link>
                 </div>
                 <p>
                
                   or <br /> Login with
                 </p>
-                <div class=" mb-2">
+                <div className=" mb-2">
                   <button
                     className="Google-Login-Button me-4"
                     onClick={SignInUsingGoogle}
@@ -101,7 +100,7 @@ const Login = () => {
                     <img src={GoogleImage} alt="" width="50" height="50" />
                   </button>
                   <button
-                    class="GitHub-Login-Button"
+                    className="GitHub-Login-Button"
                     onClick={SignInUsingGithub}
                   >
                     <img src={GithubImage} alt="" width="50" height="50" />

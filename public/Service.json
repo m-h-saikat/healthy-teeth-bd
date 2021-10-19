@@ -12,7 +12,7 @@
       "id": 2,
       "title": "Dental Crowns",
       "ShortDescription": "A dental crown is a dental prosthesis which replaces the visible part of a tooth. ",
-      "Full-description": "A dental crown is a dental prosthesis which replaces the visible part of a tooth. A dental crown functions to strengthen teeth, restore their original shape, and improve their appearance. Dental crowns are also used to hold dental bridges in place and cover dental implants.",
+      "FullDescription": "A dental crown is a dental prosthesis which replaces the visible part of a tooth. A dental crown functions to strengthen teeth, restore their original shape, and improve their appearance. Dental crowns are also used to hold dental bridges in place and cover dental implants.",
       "price": 16.60,
       "image": "https://www.newmouth.com/wp-content/uploads/2020/09/stainless-steel-crown-scaled.jpeg"
   
@@ -21,7 +21,7 @@
       "id": 3,
       "title": "Bridgework",
       "ShortDescription": "A dental bridge is a structure between two dental crowns to fill the gap between missing teeth..",
-      "Full-description": "A dental bridge is a structure between two dental crowns to fill the gap between missing teeth. A bridge can be supported by your teeth, implants, or a combination of teeth and implants. A dental bridge can restore your smile, improve your appearance, and take years off your look. Who doesn't want to look better- or younger?",
+      "FullDescription": "A dental bridge is a structure between two dental crowns to fill the gap between missing teeth. A bridge can be supported by your teeth, implants, or a combination of teeth and implants. A dental bridge can restore your smile, improve your appearance, and take years off your look. Who doesn't want to look better- or younger?",
       "price": 12.99,
       "image": "https://img.freepik.com/free-vector/denture-concept-healthy-teeth-with-fixed-dental-bridgework-implants_177953-197.jpg?size=338&ext=jpg&ga=GA1.2.503446043.1623542400"
    
@@ -30,7 +30,7 @@
       "id": 4,
       "title": "Cosmetic Fillings",
       "ShortDescription": "Cosmetic fillings, or tooth- colored fillings, are made of composite resin and glass particles.",
-      "Full-description": "Cosmetic fillings, or tooth- colored fillings, are made of composite resin and glass particles. They are cemented onto the existing teeth using a bonding agent. Cosmetic fillings can improve the appearance of your smile. Unlike silver-colored fillings, cosmetic fillings look just like your natural teeth. ",
+      "FullDescription": "Cosmetic fillings, or tooth- colored fillings, are made of composite resin and glass particles. They are cemented onto the existing teeth using a bonding agent. Cosmetic fillings can improve the appearance of your smile. Unlike silver-colored fillings, cosmetic fillings look just like your natural teeth. ",
       "price": 23.99,
       "image": "https://waverlydentalgroup.com/wp-content/uploads/2016/09/toothfillings.png"
     
@@ -39,7 +39,7 @@
       "id": 5,
       "title": "Dental Veneers",
       "ShortDescription": "Many people are discovering the benefits of veneers. Veneers are thin coverings that are placed over the front part of the teeth.",
-      "Full-description": "Many people are discovering the benefits of veneers. Veneers are thin coverings that are placed over the front part of the teeth. Veneers are placed on teeth that are crooked, poorly shaped, or severely discolored. They may also be used to lighten teeth that are yellow or have a gray cast.",
+      "FullDescription": "Many people are discovering the benefits of veneers. Veneers are thin coverings that are placed over the front part of the teeth. Veneers are placed on teeth that are crooked, poorly shaped, or severely discolored. They may also be used to lighten teeth that are yellow or have a gray cast.",
       "price": 40.00,
       "image": "https://www.kindpng.com/picc/m/366-3664788_tooth-discoloration-porcelain-veneers-composite-bonding-tooth-chipped.png"
       
