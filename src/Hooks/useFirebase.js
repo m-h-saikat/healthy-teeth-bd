@@ -27,12 +27,15 @@ const useFirebase = () => {
   const [password, setPassword] = useState("");
 
   //Google Sign in
-  const SignInUsingGoogle = () => {
+  const SignInUsingGoogle = (e) => {
+    e.preventDefault();
     signInWithPopup(auth, GoogleProvider)
       .then((result) => {
+        
         const { photoURL, displayName, email } = result.user;
         const userInfo = { photo: photoURL, name: displayName, email: email };
         setUser(userInfo);
+        console.log(userInfo);
         alert("Login Successfully ");
       })
       .catch((error) => {
@@ -43,6 +46,7 @@ const useFirebase = () => {
   const SignInUsingGithub = () => {
     signInWithPopup(auth, GithubProvider)
       .then((result) => {
+        console.log(result);
         const { photoURL, displayName, email } = result.user;
         const userInfo = { photo: photoURL, name: displayName, email: email };
         setUser(userInfo);
@@ -76,27 +80,28 @@ const useFirebase = () => {
   };
 
   //User Info
-  const handleNameChange = (e) => {
+  const handleNameChange = e => {
     setName(e.target.value);
   };
 
   // Email Info
-  const handleEmailChange = (e) => {
+  const handleEmailChange = e => {
     setEmail(e.target.value);
   };
   //Password Info
-  const handlePasswordChange = (e) => {
+  const handlePasswordChange = e => {
     setPassword(e.target.value);
   };
 
   //Registration
-  const handleRegistration = (e) => {
+  const handleRegistration = e => {
     e.preventDefault();
     createUserWithEmailAndPassword(auth, email, password)
       .then((result) => {
         const { photoURL, displayName, email } = result.user;
         const userInfo = { photo: photoURL, name: displayName, email: email };
         setUser(userInfo);
+        console.log(userInfo);
         setError("");
         alert("User Has Been Created Successfully");
       })
@@ -106,14 +111,14 @@ const useFirebase = () => {
   };
 
   //Sign in with Mail & Password
-  const handlesignInWithEmailAndPassword = (e, email, password, name) => {
+  const handlesignInWithEmailAndPassword = (e) => {
     e.preventDefault();
-    signInWithEmailAndPassword(auth, email, password, name)
-      .then((result) => {
+    signInWithEmailAndPassword(auth, email, password )
+    .then((result) => {
+     
         setUser(result.user);
         setError("");
         alert("Login Successfully");
-        console.log(result);
       })
       .catch((error) => {
         setError(error);

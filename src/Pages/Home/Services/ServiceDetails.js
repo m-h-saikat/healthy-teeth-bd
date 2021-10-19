@@ -2,42 +2,42 @@ import Button from "@restart/ui/esm/Button";
 import React, { useEffect, useState } from "react";
 import { Card } from "react-bootstrap";
 import { useParams } from "react-router";
+import { Link } from "react-router-dom";
+import UseService from "../../../Hooks/UseService";
 
 const ServiceDetails = () => {
   const { ServiceID } = useParams();
-  console.log(ServiceID);
-  const [servicesDetails, setServicesDetails] = useState([]);
+  const { services } = UseService();
  const [singleService,setSingleService] = useState([]);
 
-  useEffect(() => {
-    fetch('/Service.json')
-      .then((res) => res.json())
-      .then((data) => setServicesDetails(data));
-  }, [ServiceID]);
-  useEffect(() => {
-    const foundServiceDetails = servicesDetails.find(
-      Service => Service.id == ServiceID
-    );
-    console.log(foundServiceDetails);
 
-    setSingleService(foundServiceDetails);
-  }, [servicesDetails]);
-  console.log(singleService);
+    useEffect(() => {
+      if(services.length>0){const Details = services?.find((service) => service.id == Number(ServiceID)); 
+        setSingleService(Details);
+
+    }}, [services,ServiceID]);
+ 
+
 
   return (
-    <div>
-      <Card className="text-center">
-        <Card.Header>{}</Card.Header>
-        <Card.Body>
-          <Card.Title>Special title treatment</Card.Title>
-          <Card.Text>
-            With supporting text below as a natural lead-in to additional
-            content.
-          </Card.Text>
-          <Button variant="primary">Go somewhere</Button>
-        </Card.Body>
-        <Card.Footer className="text-muted">2 days ago</Card.Footer>
-      </Card>
+    <div className="mx-auto">
+     <Card className="singleService mx-auto w-25 p-4 m-5">
+  <Card.Img variant="top" src={singleService.image} width="100" height="300"/>
+  <Card.Body>
+    <Card.Title className="text-danger"> <h2>{singleService.title}</h2> </Card.Title>
+    <Card.Text >
+  {singleService.FullDescription}
+  <br/>
+  <br/>
+ <h3 className="text-primary"> Sevice Charge : {singleService.price}</h3>
+    </Card.Text>
+    <Button variant="primary" className="btn btn-dark "> <Link to="/Appoinment" class="text-center text-danger">
+                  
+                  Appointment
+                                </Link></Button>
+   
+  </Card.Body>
+</Card>
     </div>
   );
 };

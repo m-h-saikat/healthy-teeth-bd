@@ -6,7 +6,7 @@ import Slider3 from "../../Images/Slider/Slider-3.jpg";
 import "./Banner.css";
 const Banner = () => {
   return (
-    <div>
+    <div id="Home">
       <Carousel>
         <Carousel.Item>
           <img
@@ -15,9 +15,7 @@ const Banner = () => {
             alt="First slide"
             height="600"
           />
-          <Carousel.Caption>
-            <h1>WELCOME TO HEALTHY TEETH</h1>
-          </Carousel.Caption>
+          <Carousel.Caption></Carousel.Caption>
         </Carousel.Item>
         <Carousel.Item>
           <img
@@ -38,9 +36,7 @@ const Banner = () => {
           />
 
           <Carousel.Caption>
-            <h1 className="text-primary">
-              BRUSH REGULARY BUT NOT AGGRESSIVELY
-            </h1>
+            <h1 className="text-primary"></h1>
           </Carousel.Caption>
         </Carousel.Item>
       </Carousel>

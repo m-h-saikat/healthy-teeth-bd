@@ -26,7 +26,7 @@ const Header = () => {
 
 
 
-    {user.email?(<button onClick={LogOut}  className="btn btn-danger">SignOut</button> ):(<NavLink to="/Login"className="NavLink"><button className="btn btn-primary">Sign In</button></NavLink>)
+    {user.email? (<button onClick={LogOut}  className="btn btn-danger">SignOut</button> ):(<NavLink to="/Login"className="NavLink"><button className="btn btn-primary">Sign In</button></NavLink>)
     }
    { user.email?( <div className="d-flex">{user.photo?(<img className="user-profile-photo" src={user.photo} width="50" height="50"/>):(<img className="user-profile-photo" src={NoImageinUSer} width="50" height="50"/>)} <p className="my-auto ms-2 h6">
 {user.name}
