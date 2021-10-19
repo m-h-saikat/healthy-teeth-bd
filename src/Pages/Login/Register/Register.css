@@ -69,3 +69,6 @@
 .signup-form .btn:hover, .signup-form .btn:focus {
 	background: #179b81 !important;
 }
+.Login-Logout-Button{
+	text-decoration: none;
+  }

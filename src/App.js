@@ -6,6 +6,7 @@ import {
 } from "react-router-dom";
 import './App.css';
 import AuthProvider from "./Context/AuthProvider";
+import Appoinment from "./Pages/Appoinment/Appoinment";
 import Contact from "./Pages/Contact/Contact";
 
 import Home from "./Pages/Home/Home";
@@ -32,6 +33,9 @@ function App() {
          </Route>
          <Route path ="/Home"> 
          <Home></Home>
+         </Route>
+         <Route path ="/Appoinment"> 
+         <Appoinment></Appoinment>
          </Route>
          <Route path ="/Service"> 
          <Service></Service>

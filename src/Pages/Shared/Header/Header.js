@@ -2,7 +2,7 @@ import React from 'react';
 import { Container, Nav, Navbar } from 'react-bootstrap';
 import { NavLink } from 'react-router-dom';
 import { HashLink } from 'react-router-hash-link';
-
+import NoImageinUSer from '../../Images/NoImageinUser.png'
 import './Header.css'
 import useAuth from '../../../Hooks/useAuth';
 import Logo from '../../Images/Logo.png'
@@ -20,6 +20,7 @@ const Header = () => {
     <Nav.Link as={HashLink} to="/home#About"><h4>About</h4></Nav.Link>
     <Nav.Link as={HashLink} to="/home#Team"><h4>Team</h4></Nav.Link>
     <Nav.Link as={HashLink} to="/home#Service"><h4>Service</h4></Nav.Link>
+    <Nav.Link as={HashLink} to="/Appoinment"><h4>Appoinment</h4></Nav.Link>
     <Nav.Link as={HashLink} to="/Contact"><h4>Contact</h4></Nav.Link>
 
 
@@ -27,14 +28,13 @@ const Header = () => {
 
     {user.email?(<button onClick={LogOut}  className="btn btn-danger">SignOut</button> ):(<NavLink to="/Login"className="NavLink"><button className="btn btn-primary">Sign In</button></NavLink>)
     }
-   { user.email?( <div className="d-flex"><img className="user-profile-photo" src={user.photo} width="50" height="50"/> <p className="my-auto ms-2 h6">
+   { user.email?( <div className="d-flex">{user.photo?(<img className="user-profile-photo" src={user.photo} width="50" height="50"/>):(<img className="user-profile-photo" src={NoImageinUSer} width="50" height="50"/>)} <p className="my-auto ms-2 h6">
 {user.name}
    
    </p> </div> ) :(<NavLink to="/Register"className="NavLink"><button className="btn btn-danger">Sign Up</button></NavLink>)}
     </Navbar.Collapse>
   </Container>
 </Navbar>
-
 
           
 
