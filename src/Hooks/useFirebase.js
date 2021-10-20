@@ -22,7 +22,7 @@ const useFirebase = () => {
   //State Declearing
   const [user, setUser] = useState({});
   const [error, setError] = useState({});
-  const [name, setName] = useState("");
+  const [displayName, setDisplayName] = useState("");
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
 
@@ -33,9 +33,9 @@ const useFirebase = () => {
       .then((result) => {
        
         const { photoURL, displayName, email } = result.user;
-        const userInfo = { photo: photoURL, name: displayName, email: email };
+        const userInfo = { photo: photoURL, displayName: displayName, email: email };
         setUser(userInfo);
-        alert(`${userInfo.name} Logged in Successfully`);
+        alert(`${userInfo.displayName} Logged in Successfully`);
       })
       .catch((error) => {
         setError(error);
@@ -47,26 +47,16 @@ const useFirebase = () => {
       .then((result) => {
         console.log(result);
         const { photoURL, displayName, email } = result.user;
-        const userInfo = { photo: photoURL, name: displayName, email: email };
+        const userInfo = { photo: photoURL, displayName: displayName, email: email };
         setUser(userInfo);
-        alert(`${userInfo.name} Logged in Successfully`);
+        alert(`${userInfo.displayName} Logged in Successfully`);
       })
       .catch((error) => {
         setError(error);
       });
   };
 
-  //Continue User Info
-  useEffect(() => {
-    onAuthStateChanged(auth, (user) => {
-      if (user) {
-        setUser(user);
-   
-      } else {
-        setError("");
-      }
-    });
-  }, []);
+  
 
   // LogOut
   const LogOut = () => {
@@ -81,7 +71,7 @@ const useFirebase = () => {
 
   //User Info
   const handleNameChange = e => {
-    setName(e.target.value);
+    setDisplayName(e.target.value);
   };
 
   // Email Info
@@ -99,9 +89,9 @@ const useFirebase = () => {
     createUserWithEmailAndPassword(auth, email, password)
       .then((result) => {
         const { photoURL, displayName, email } = result.user;
-        const userInfo = { photo: photoURL, name: displayName, email: email };
+        const userInfo = { photo: photoURL, displayName: displayName, email: email };
         setUser(userInfo);
-        console.log(userInfo);
+     
         setError("");
         alert("User Has Been Created Successfully");
       })
@@ -116,7 +106,7 @@ const useFirebase = () => {
     signInWithEmailAndPassword(auth, email, password )
     .then((result) => {
       const { photoURL, displayName, email } = result.user;
-      const userInfo = { photo: photoURL, name: displayName, email: email };
+      const userInfo = { photo: photoURL, displayName: displayName, email: email };
       setUser(userInfo);
         setError("");
         alert("Login Successfully");
@@ -126,6 +116,18 @@ const useFirebase = () => {
         alert(error);
       });
   };
+
+  //Continue User Info
+  useEffect(() => {
+    onAuthStateChanged(auth, (user) => {
+      if (user) {
+        setUser(user);
+   
+      } else {
+        setError("");
+      }
+    });
+  }, []);
 
   return {
     SignInUsingGoogle,

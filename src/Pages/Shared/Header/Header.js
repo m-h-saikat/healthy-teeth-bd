@@ -9,7 +9,7 @@ import Logo from "../../Images/Logo.png";
 
 const Header = () => {
   const { user, LogOut } = useAuth();
-
+console.log(user);
 
   return (
     <div className="header">
@@ -69,7 +69,7 @@ const Header = () => {
                     alt=""
                   />
                 )} 
-                {user.name?(<p className="my-auto ms-2 h6">{user.name}</p> ):(<p className="my-auto ms-2 h6">{user.email.slice(0, -10)}</p> )}
+                {user.displayName?(<p className="my-auto ms-2 h6">{user.displayName}</p> ):(<p className="my-auto ms-2 h6">{user.email.slice(0, -10)}</p> )}
               </div>
             ) : (
               <NavLink to="/Register" className="NavLink">
