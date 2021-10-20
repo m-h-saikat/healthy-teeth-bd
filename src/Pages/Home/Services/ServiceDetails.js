@@ -17,7 +17,7 @@ const ServiceDetails = () => {
 
     }}, [services,ServiceID]);
  
-console.log(singleService)
+
 
   return (
     <div className="mx-auto singleService-container p-5">

@@ -33,7 +33,7 @@ const useFirebase = () => {
       .then((result) => {
        
         const { photoURL, displayName, email } = result.user;
-        const userInfo = { photo: photoURL, displayName: displayName, email: email };
+        const userInfo = { photoURL: photoURL, displayName: displayName, email: email };
         setUser(userInfo);
         alert(`${userInfo.displayName} Logged in Successfully`);
       })
@@ -47,7 +47,7 @@ const useFirebase = () => {
       .then((result) => {
         console.log(result);
         const { photoURL, displayName, email } = result.user;
-        const userInfo = { photo: photoURL, displayName: displayName, email: email };
+        const userInfo = { photoURL: photoURL, displayName: displayName, email: email };
         setUser(userInfo);
         alert(`${userInfo.displayName} Logged in Successfully`);
       })
@@ -89,7 +89,7 @@ const useFirebase = () => {
     createUserWithEmailAndPassword(auth, email, password)
       .then((result) => {
         const { photoURL, displayName, email } = result.user;
-        const userInfo = { photo: photoURL, displayName: displayName, email: email };
+        const userInfo = { photoURL: photoURL, displayName: displayName, email: email };
         setUser(userInfo);
      
         setError("");
@@ -106,7 +106,7 @@ const useFirebase = () => {
     signInWithEmailAndPassword(auth, email, password )
     .then((result) => {
       const { photoURL, displayName, email } = result.user;
-      const userInfo = { photo: photoURL, displayName: displayName, email: email };
+      const userInfo = { photoURL: photoURL, displayName: displayName, email: email };
       setUser(userInfo);
         setError("");
         alert("Login Successfully");
@@ -116,6 +116,7 @@ const useFirebase = () => {
         alert(error);
       });
   };
+  
 
   //Continue User Info
   useEffect(() => {
@@ -127,7 +128,7 @@ const useFirebase = () => {
         setError("");
       }
     });
-  }, []);
+  }, [auth]);
 
   return {
     SignInUsingGoogle,

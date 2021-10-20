@@ -42,7 +42,7 @@ const Register = () => {
             <button  type="submit" className="btn btn-primary btn-block btn-lg">Sign Up</button>
         </div>
 		<p className="small text-center">By clicking the Sign Up button, you agree to our <br/>Terms and Conditions, and Privacy Policy</p>
-        <div className="text-center text-danger h5">Already have an account?  <Link to="/Login" className="text-center text-danger Login-Logout-Button">Sign in </Link></div>
+        <div className="text-center text-primary "><Link to="/Login" className="text-center text-danger Login-Logout-Button">Already have a account ? Please Sign in!</Link></div>
     </form>
 
 </div>

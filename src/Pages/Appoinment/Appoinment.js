@@ -47,7 +47,7 @@ const Appoinment = () => {
                         <input className="form-control" type="date" placeholder="Select Date"/> </div>
                 </div>
             </div>
-            <div className=" d-flex flex-column text-center px-5 mt-3 mb-3"> <small className="agree-text">By Booking this appointment you agree to the</small> <a href="#" className="terms">Terms & Conditions</a> </div> <button className="btn btn-primary btn-block confirm-button">Confirm</button>
+            <div className=" d-flex flex-column text-center px-5 mt-3 mb-3"> <small className="agree-text">By Booking this appointment you agree to the</small> <a href="/" className="terms">Terms & Conditions</a> </div> <button className="btn btn-primary btn-block confirm-button">Confirm</button>
         </div>
     </div>
 </div> 

@@ -82,10 +82,10 @@ const Login = () => {
                   </button>
                 </div>
                 <div className="text-center text-danger">
-                  New User?  
+               
                     <Link to="/Register" className="text-center text-danger Login-Logout-Button ">
                   
-                      Sign Up
+                    Need an Account? Please Sign up!
                   </Link>
                 </div>
                 <p>

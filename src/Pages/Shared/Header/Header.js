@@ -9,7 +9,6 @@ import Logo from "../../Images/Logo.png";
 
 const Header = () => {
   const { user, LogOut } = useAuth();
-console.log(user);
 
   return (
     <div className="header">
@@ -52,10 +51,10 @@ console.log(user);
             )}
             {user.email ? (
               <div className="d-flex">
-                {user.photo ? (
+                {user.photoURL ? (
                   <img
                     className="user-profile-photo"
-                    src={user.photo}
+                    src={user.photoURL}
                     width="50"
                     height="50"
                     alt=""
