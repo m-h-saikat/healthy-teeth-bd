@@ -31,12 +31,11 @@ const useFirebase = () => {
     e.preventDefault();
     signInWithPopup(auth, GoogleProvider)
       .then((result) => {
-        
+       
         const { photoURL, displayName, email } = result.user;
         const userInfo = { photo: photoURL, name: displayName, email: email };
         setUser(userInfo);
-        console.log(userInfo);
-        alert("Login Successfully ");
+        alert(`${userInfo.name} Logged in Successfully`);
       })
       .catch((error) => {
         setError(error);
@@ -50,7 +49,7 @@ const useFirebase = () => {
         const { photoURL, displayName, email } = result.user;
         const userInfo = { photo: photoURL, name: displayName, email: email };
         setUser(userInfo);
-        alert("Login Successfully ");
+        alert(`${userInfo.name} Logged in Successfully`);
       })
       .catch((error) => {
         setError(error);
@@ -62,6 +61,7 @@ const useFirebase = () => {
     onAuthStateChanged(auth, (user) => {
       if (user) {
         setUser(user);
+   
       } else {
         setError("");
       }
@@ -115,13 +115,15 @@ const useFirebase = () => {
     e.preventDefault();
     signInWithEmailAndPassword(auth, email, password )
     .then((result) => {
-     
-        setUser(result.user);
+      const { photoURL, displayName, email } = result.user;
+      const userInfo = { photo: photoURL, name: displayName, email: email };
+      setUser(userInfo);
         setError("");
         alert("Login Successfully");
       })
       .catch((error) => {
         setError(error);
+        alert(error);
       });
   };
 

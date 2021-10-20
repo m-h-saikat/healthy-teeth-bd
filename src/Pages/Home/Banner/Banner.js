@@ -3,7 +3,6 @@ import { Carousel } from "react-bootstrap";
 import Slider1 from "../../Images/Slider/Slider-1.jpg";
 import Slider2 from "../../Images/Slider/Slider-2.jpg";
 import Slider3 from "../../Images/Slider/Slider-3.jpg";
-import "./Banner.css";
 const Banner = () => {
   return (
     <div id="Home">

@@ -1,11 +1,11 @@
 .NavLink{
     text-decoration: none;
-    margin-right: 20px;
-    font-size:1.2em;
+    margin-right: 10px;
+   
 }
 .header .btn{
     border-radius: 30px!important;
-    padding: 5px 20px;
+    padding: 5px 10px;
 }
 .user-profile-photo{
     border-radius:50px;

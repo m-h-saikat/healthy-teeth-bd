@@ -13,10 +13,10 @@ const Service = () => {
           OUR SERVICES
         </h1>
       </div>
-      <div className="row row-cols-1 row-cols-md-3 g-4 container mx-auto ">
+      <div className="row row-cols-1 row-cols-md-3 g-3 container mx-auto ">
         {services.map((service) => (
           <div className="col mx-auto" key={service.key}>
-            <div className="card shadow p-3 mb-5 bg-white rounded Service-card h-60 shadow p-3 mb-5 mt-5 bg-white rounded">
+            <div className="card shadow p-3  bg-white rounded Service-card h-60 shadow  border-2">
               <img
                 src={service.image}
                 className="img-fluid rounded"

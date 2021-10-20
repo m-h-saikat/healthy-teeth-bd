@@ -18,7 +18,7 @@ const Team = () => {
       <div className="row row-cols-1 row-cols-md-3 g-4 container mx-auto ">
         {teams.map((team) => (
           <div className="col mx-auto" key={team.key}>
-            <div className="card Service-card h-60 shadow p-3 mb-5 mt-5 bg-white rounded">
+            <div className="card Service-card h-60 shadow p-3 mb-5 mt-5  bg-white rounded">
               <img
                 className="team-image"
                 src={team.image}

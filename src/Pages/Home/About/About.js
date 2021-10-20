@@ -4,18 +4,19 @@ import "./About.css";
 const About = () => {
   return (
     <div className="  About-Container" id="About">
-      <div className=" mb-4 Home-Section">
+      <div className=" mb-4 ">
         <div className="row d-flex">
           <div className="col-md-6 ">
             <img src={image} alt="" width="100%" />
           </div>
-          <div className="col-md-6 container p-5 my-auto mx-auto">
-            <h1 className="text-danger mb-5 ">
+          <div className="col-md-6  p-5 my-auto mx-auto">
+            <h1 className="text-danger mb-2">
               <b>
+                
                 WELCOME TO <br /> HEALTHY TEETH
               </b>
             </h1>
-            <h4>
+            <h4 className="p-4">
               Greetings. ‘HEALTHY TEETH’ aims at developing social awareness
               about oral hygiene, preventing dental diseases & ensuring ethical
               dental treatments. We are a RJSC registered organization working
